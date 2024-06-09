@@ -1,5 +1,5 @@
 const {
-    calcularHorasDeProjeto,
+    calcularPorProjeto,
 } = require("../../dominio/calculadora/Hora/valorHora");
 
 describe("Cálculo da quantidade de horas por projeto", () => {
@@ -14,7 +14,7 @@ describe("Cálculo da quantidade de horas por projeto", () => {
             'formulario',
             'ssr'
         ];
-        const result = calcularHorasDeProjeto(listaDeFuncionalidades);
+        const result = calcularPorProjeto(listaDeFuncionalidades);
 
         expect(result).toBe(72)
     });
